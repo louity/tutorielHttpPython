@@ -3,7 +3,7 @@
 import requests
 
 # adresse du seveur
-HOSTNAME = 'A REMPLIR'
+HOSTNAME = 'http://c91f19d0.ngrok.io'
 # chemin des messages dans le serveur
 MESSAGES_PATH = '/messages'
 
@@ -32,3 +32,4 @@ def afficherLesMessages () :
 message = ecrireUnMessage()
 envoyerUnMessageAuServeur(message)
 recupererLesMessagesDuServeur()
+afficherLesMessages()
