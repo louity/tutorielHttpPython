@@ -1,4 +1,5 @@
-# une librairie pour faire des requetes HTTP
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-# une librairie pour faire des requetes HTTP
 import requests
 
 # adresse du seveur
