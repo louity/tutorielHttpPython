@@ -4,9 +4,13 @@ import requests
 
 # adresse de mon serveur
 LOCALHOSTNAME = 'http://localhost'
+PORT = 8003
 
 # test du path /desciption
 path = '/description'
-r = requests.get(HOSTNAME + ':' + PORT + '/description')
-print(r.code)
+
+adress = str(LOCALHOSTNAME) + ':' + str(PORT) + '/description'
+print(adress)
+
+r = requests.get(adress)
 print(r.text)

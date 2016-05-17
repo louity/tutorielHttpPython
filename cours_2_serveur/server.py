@@ -12,7 +12,7 @@ separator = '\n'
 description = 'COMPLETER AVEC LA DESCRIPTION DE MON SERVICE'
 
 def respondToRequest (request, code, output) :
-    request.send_response(response_code)
+    request.send_response(code)
     request.send_header('Content-type', 'text')
     request.end_headers()
     request.wfile.write(output)
